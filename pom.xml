@@ -197,6 +197,7 @@
             --add-opens=java.base/java.lang=ALL-UNNAMED
             --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
             --add-opens=java.base/java.lang.invoke=ALL-UNNAMED
+            --add-opens=java.sql/java.sql=ALL-UNNAMED
             ${surefire.args.base}
         </surefire.test.unit.open.args>
         <!-- Emulate the behaviour in standalone, where slf4j is loaded in the boot layer -->
@@ -208,7 +209,7 @@
         </surefire.slf4j.module.args>
 
         <assembly.verifier.version>2.0.0</assembly.verifier.version>
-        <mule.maven.plugin.version>4.2.0</mule.maven.plugin.version>
+        <mule.maven.plugin.version>4.3.0</mule.maven.plugin.version>
     </properties>
 
     <dependencyManagement>
